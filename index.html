@@ -26,22 +26,65 @@
         function hello()
         {
             
-        }
+const choices = ["A", "B", "C", "D"];
+const questions = ["question1", "question2"]
+const answers = ["A", "C"]
+//the answer to questions[0] is answers[0]
+var points = 0
+var question_num = 0
+displayQuestion(questions[0])
+// Function to display the question and choices to the user
+function displayQuestion(question) {
+  // Display the question
+  console.log(question);
+  //put quetion here
 
+  // Display the choices
+  for (let i = 0; i < choices.length; i++) {
+    console.log(`${i + 1}. ${choices[i]}`);
+  }
+}
+
+// Function to check if the user's answer is correct
+function checkAnswer(userAnswer) {
+  if (userAnswer === correctAnswer) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+function ask_questions(userAnswer){
+    // Prompt the user to enter their answer
+    // const userAnswer = prompt("Enter your answer:");
+
+    // Display the question and choices to the user
+    
+
+    // Check if the user's answer is correct
+    points += checkAnswer(userAnswer, answers[question_num]);
+    question_num++
+    displayQuestion(questions[question_num]);
+
+    // Display a message to the user indicating if their answer was correct or not
+
+        }
+    }
     </script>
 </head>
 <body>
     <div class="w3-container w3-indigo">
         <h2>IQ TEST</h2>
     </div>
-       
+
+    <button onclick="displayQuestion()" class="button">Start the test</button>
+      
   
 <div class="text-center"> 
     <div class="btn-group">
-        <button onclick="hello()" class="button">A</button>
-        <button onclick="hello()" class="button">B</button>
-        <button onclick="hello()" class="button">C</button>
-        <button onclick="hello()" class="button">D</button>
+        <button onclick="hello('A')" class="button">A</button>
+        <button onclick="hello('B')" class="button">B</button>
+        <button onclick="hello('C')" class="button">C</button>
+        <button onclick="hello('D')" class="button">D</button>
       </div>
 </div>
 
