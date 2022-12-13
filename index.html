@@ -23,21 +23,34 @@
     </style>
 
     <script>
-        function hello()
-        {
+
             
+//create arrays with questions and answers
 const choices = ["A", "B", "C", "D"];
 const questions = ["question1", "question2"]
 const answers = ["A", "C"]
+console.log(questions)
+console.log(answers)
+console.log(questions[1])
+console.log(answers[1])
+//push adds an element to the end of an array
+questions.push("next question?")
+answers.push("next answer")
+console.log(questions)
+console.log(answers)
 //the answer to questions[0] is answers[0]
 var points = 0
 var question_num = 0
-displayQuestion(questions[0])
+
 // Function to display the question and choices to the user
 function displayQuestion(question) {
-  // Display the question
+  // Display the question to the console
   console.log(question);
-  //put quetion here
+  // display to the user
+  //write that code her
+ "What type of food holds the world record for being the most stolen around the globe?"
+
+
 
   // Display the choices
   for (let i = 0; i < choices.length; i++) {
@@ -46,29 +59,32 @@ function displayQuestion(question) {
 }
 
 // Function to check if the user's answer is correct
-function checkAnswer(userAnswer) {
+function checkAnswer(userAnswer, correctAnswer) {
   if (userAnswer === correctAnswer) {
     return 1;
   } else {
     return 0;
   }
 }
-function ask_questions(userAnswer){
+function hello(userAnswer){
     // Prompt the user to enter their answer
     // const userAnswer = prompt("Enter your answer:");
 
     // Display the question and choices to the user
     
 
-    // Check if the user's answer is correct
+    // Check if the user's answer is correct and modify points
     points += checkAnswer(userAnswer, answers[question_num]);
+    console.log(points)
+
+    //add one to question`-num to move to the next question
     question_num++
     displayQuestion(questions[question_num]);
 
     // Display a message to the user indicating if their answer was correct or not
 
         }
-    }
+  
     </script>
 </head>
 <body>
@@ -76,7 +92,7 @@ function ask_questions(userAnswer){
         <h2>IQ TEST</h2>
     </div>
 
-    <button onclick="displayQuestion()" class="button">Start the test</button>
+    <button onclick="displayQuestion(questions[0])" class="button">Start the test</button>
       
   
 <div class="text-center"> 
@@ -87,6 +103,5 @@ function ask_questions(userAnswer){
         <button onclick="hello('D')" class="button">D</button>
       </div>
 </div>
-
 </body>
 </html>
