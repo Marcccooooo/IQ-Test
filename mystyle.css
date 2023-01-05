@@ -11,9 +11,19 @@
   float: left;
 }
 
+.btn-group button:hover{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
 .btn-group .button:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 
-.btn-group .button:hover {
+.btn-group button:disabled {
   background-color: #e7e7e7; color: black;}
+
+
+
