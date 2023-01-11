@@ -28,7 +28,7 @@
 //create arrays with questions and answers
 const choices = ["A", "B", "C", "D"];
 const questions = ["question1", "question2, question3, question4, question5, question6, question7, question8, question9, question10"]
-const answers = ["A", "A", "B", "B", "D", "A", "C", "C", "C", "D","A"]
+const answers = ["A", "A", "B", "B", "D", "A", "C", "C", "C", "D",]
 console.log(questions)
 console.log(answers)
 console.log(questions[1])
@@ -129,10 +129,10 @@ function hello(userAnswer){
     </div>
     <div class="btn-group">
 
-      <button onclick="hello('A')" class="button">A</button>
-      <button onclick="hello('B')" class="button">B</button>
-      <button onclick="hello('C')" class="button">C</button>
-      <button onclick="hello('D')" class="button">D</button>
+      <button onclick="hello('A'); this.disabled=true;" class="button">A</button>
+      <button onclick="hello('B'); this.disabled=true;" class="button">B</button>
+      <button onclick="hello('C'); this.disabled=true;" class="button">C</button>
+      <button onclick="hello('D'); this.disabled=true;" class="button">D</button>
     </div>
 </div> 
  <div class="w3-container">
