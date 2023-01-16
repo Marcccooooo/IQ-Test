@@ -16,19 +16,17 @@
     <title>IQ Test</title>
 
     <style>
-        p {
-            background-color:antiquewhite;
-        }
-
+    
     </style>
 
     <script>
 
             
 //create arrays with questions and answers
+
 const choices = ["A", "B", "C", "D"];
 const questions = ["question1", "question2, question3, question4, question5, question6, question7, question8, question9, question10"]
-const answers = ["A", "A", "B", "B", "D", "A", "C", "C", "C", "D","A"]
+const answers = ["A", "A", "B", "B", "D", "A", "C", "C", "C", "D",]
 console.log(questions)
 console.log(answers)
 console.log(questions[1])
@@ -65,6 +63,7 @@ function checkAnswer(userAnswer, correctAnswer) {
   } else {
     return 0;
   }
+
 }
 function hello(userAnswer){
     // Prompt the user to enter their answer
@@ -81,69 +80,70 @@ function hello(userAnswer){
     question_num++
     displayQuestion(questions[question_num]);
 
-    // Display a message to the user indicating if their answer was correct or not
+    let counter = points; 
+    document.getElementById('counter').innerHTML = counter;
+}
 
-        }
+
+
+
+
+
+
+
+
+
   
-    </script>
+   
+  
+
+  </script>
 </head>
 <body>
-    <div class="w3-container w3-indigo">
+<div class="text-center"> 
+    <div class="w3-container w3-indigo hey">
         <h2>IQ TEST</h2>
     </div>
 
-    <button onclick="displayQuestion(questions[0])" class="button">Start the test</button>
-      
   
 
     
 <div class="w3-container">
-    <p>1.  What type of food holds the world record for being the most stolen around the globe?
-      A. Wagyu beef
-      B. Cheese
-      C. Coffee
-      D.Chocolate
+  <p style="background-color:white;">1.  What type of food holds the world record for being the most stolen around the globe?</p>
+    <ol class="d center">
+      <li>Wagyu beef</li>
+      <li>Cheese</li>
+      <li>Coffee</li>
+      <li>Chocolate</li>
+    </ol>
 
+    
 
        
-    </p>
+    
 
-</div>
-<div class="text-center"> 
+
+
     <div class="btn-group">
 
-        <button onclick="hello('A'); this.disabled=true;"  class="button">A</button>
+        <button onclick="hello('A');  this.disabled=true;"  class="button">A</button>
         <button onclick="hello('B'); this.disabled=true;"  class="button">B</button>
         <button onclick="hello('C'); this.disabled=true;" class="button">C</button>
         <button onclick="hello('D'); this.disabled=true;" class="button">D</button>
       </div>
+</div>
+      
       <div class="w3-container">
-        <p>2.  What is the highest-grossing Broadway show of all time?  
+        <p>2.  What is the highest-grossing Broadway show of all time?</p>
 
-            A. The Lion King
-            B. Wicked
-            C. Kinky Boots
-            D. Hamilton
-        </p>
-    
-    </div>
-    <div class="btn-group">
+       <ol class="d center">
 
-      <button onclick="hello('A')" class="button">A</button>
-      <button onclick="hello('B')" class="button">B</button>
-      <button onclick="hello('C')" class="button">C</button>
-      <button onclick="hello('D')" class="button">D</button>
-    </div>
-</div> 
- <div class="w3-container">
-        <p>3. Who is your favorite teacher?  
-            A.  Mr. Bowman
-            B. MR WILLY 
-            C. Mrs Crocket 
-            D. OTHER……………
-        </p>
+        <li>The Lion King</li>
+        <li>Wicked</li>
+        <li>Kinky Boots</li>
+        <li>Hamilton</li>
+        </ol>
     
-    </div>
     <div class="btn-group">
 
       <button onclick="hello('A'); this.disabled=true;" class="button">A</button>
@@ -151,21 +151,43 @@ function hello(userAnswer){
       <button onclick="hello('C'); this.disabled=true;" class="button">C</button>
       <button onclick="hello('D'); this.disabled=true;" class="button">D</button>
     </div>
-</div>
+  </div>
+
+
+   
+ <div class="w3-container">
+        <p>3. Who is your favorite teacher?    </p>  
+       <ol class="d center">   
+      <li> Mr. Bowman</li> 
+      <li>  MR WILLY </li> 
+      <li>   Mrs Crocket </li> 
+      <li>   OTHER……………</li> 
+          </ol> 
+    
+    
+    <div class="btn-group">
+
+      <button onclick="hello('A'); this.disabled=true;" class="button">A</button>
+      <button onclick="hello('B'); this.disabled=true;" class="button">B</button>
+      <button onclick="hello('C'); this.disabled=true;" class="button">C</button>
+      <button onclick="hello('D'); this.disabled=true;" class="button">D</button>
+    </div>
+  </div>
+
 <div class="w3-container">
   <p>
-    4. What would Mr bowman say to “what question you would like TO ASK”
-
-    A. What is the thing that makes people think your stupid 
-    B. I'm busy don't talk to me 
-    C. Uhhhhhhhh
-    D. What is your favourite thing about this class
+    4. What would Mr bowman say to “what question you would like TO ASK”</p>
+<ol class="d center">
+    <li>What is the thing that makes people think your stupid</li> 
+    <li>I'm busy don't talk to me </li>
+  <li>Uhhhhhhhh</li>
+  <li> D. What is your favourite thing about this class</li>
+ </ol> 
     
-    
 
-  </p>
+  
 
-</div>
+
 <div class="btn-group">
 
 <button onclick="hello('A'); this.disabled=true;" class="button">A</button>
@@ -174,19 +196,46 @@ function hello(userAnswer){
 <button onclick="hello('D'); this.disabled=true;" class="button">D</button>
 </div>
 </div>
+
 <div class="w3-container">
   <p>
     5. What is the thing that makes people think your stupid 
-A. Thinking Ronaldo is better than Messi 
-B. eating with your feet
-C. Kareem 
-D. Jafar 
+  </p>
+<ol class="d center">
+  <li>Thinking Ronaldo is better than Messi</li> 
+  <li>Eating with your feet</li>
+  <li>Kareem </li>
+  <li> Jafar </li>
+</ol>
+    
+
+
+
+<div class="btn-group">
+
+<button onclick="hello('A'); this.disabled=true;" class="button">A</button>
+<button onclick="hello('B'); this.disabled=true;" class="button">B</button>
+<button onclick="hello('C'); this.disabled=true;" class="button">C</button>
+<button onclick="hello('D'); this.disabled=true;" class="button">D</button>
+</div>
+</div>
+
+
+<div class="w3-container">
+  <p>
+    6. How old is Marco’s brother</p>
+<ol class="center d">
+  <li>18</li>
+  <li> 2</li>
+  <li>7</li>
+  <li> No brother</li>
+</ol>
 
     
 
-  </p>
+  
 
-</div>
+
 <div class="btn-group">
 
 <button onclick="hello('A'); this.disabled=true;" class="button">A</button>
@@ -197,20 +246,20 @@ D. Jafar
 </div>
 
 <div class="w3-container">
-  <p>
-    6. How old is Marco’s brother 
-
-  A.18
-	B. 2
-	C. 7
-	D. No brother
-
+  <p> 
+    7. Do you like Marco</p>
+   <ol class="center d">
+   <li>Yes </li>
+     <li>No</li>
+    <li> Maybe</li>
+  <li>I want him to marry me</li> 
+  </ol>
 
     
 
-  </p>
+  
 
-</div>
+
 <div class="btn-group">
 
 <button onclick="hello('A'); this.disabled=true;" class="button">A</button>
@@ -219,43 +268,71 @@ D. Jafar
 <button onclick="hello('D'); this.disabled=true;" class="button">D</button>
 </div>
 </div>
-<div class="w3-container">
-  <p>
-    7. Do you like Marco
-    A. Yes 
-    B. No
-    C. Maybe
-    D. I want him to marry me 
-    
 
-    
-
-  </p>
-
-</div>
-<div class="btn-group">
-
-<button onclick="hello('A'); this.disabled=true;" class="button">A</button>
-<button onclick="hello('B'); this.disabled=true;" class="button">B</button>
-<button onclick="hello('C'); this.disabled=true;" class="button">C</button>
-<button onclick="hello('D'); this.disabled=true;" class="button">D</button>
-</div>
-</div>
 
 <div class="w3-container">
   <p>
-    8. Do you like Kareem 
-    A. Yes 
-    B. No 
-    C. Maybe 
-    D. I want him to marry me  
-    
+    8. Do you like Kareem </p>
+   <ol class="d center">
+    <li>Yes</li>
+  <li>No</li> 
+<li>Maybe </li>
+<li>I want him to marry me </li> 
+   </ol> 
 
     
 
-  </p>
 
+
+<div class="btn-group">
+
+<button onclick="hello('A'); this.disabled=true;" class="button">A</button>
+<button onclick="hello('B'); this.disabled=true;" class="button">B</button>
+<button onclick="hello('C'); this.disabled=true;" class="button">C</button>
+<button onclick="hello('D'); this.disabled=true;" class="button">D</button>
 </div>
+</div>
+
+
+<div class="w3-container">
+  <p>
+    9. Do you like Latinos  </p>
+   <ol class="d center">
+    <li> Yes</li>
+  <li>No (you racist)</li>
+<li> I don't mind them</li>
+<li>I like their food </li>
+    </ol>
+
+    
+
+  
+
+
+<div class="btn-group">
+
+<button onclick="hello('A'); this.disabled=true;" class="button">A</button>
+<button onclick="hello('B'); this.disabled=true;" class="button">B</button>
+<button onclick="hello('C'); this.disabled=true;" class="button">C</button>
+<button onclick="hello('D'); this.disabled=true;" class="button">D</button>
+</div>
+</div>
+
+
+<div class="w3-container">
+  <p>
+   10. Do you like Arabs</p>
+   <ol class="d center">
+   <li>Yes </li>
+  <li>No (you racist)</li> 
+<li>I don't mind them </li>
+<li>I like their food</li>
+ </ol>   
+
+    
+
+  
+
 <div class="btn-group">
 
 <button onclick="hello('A'); this.disabled=true;" class="button">A</button>
@@ -266,50 +343,17 @@ D. Jafar
 </div>
 
 <div class="w3-container">
-  <p>
-    9. Do you like Latinos  
-    A. Yes
-    B. No (you racist)
-    C. I don’t mind them
-    D.  I like their food 
-    
-
-    
-
-  </p>
-
-</div>
-<div class="btn-group">
-
-<button onclick="hello('A'); this.disabled=true;" class="button">A</button>
-<button onclick="hello('B'); this.disabled=true;" class="button">B</button>
-<button onclick="hello('C'); this.disabled=true;" class="button">C</button>
-<button onclick="hello('D'); this.disabled=true;" class="button">D</button>
-</div>
+  <h1>Score</h1>
+  <p id="counter">0</p>
 </div>
 
-<div class="w3-container">
-  <p>
-   10. Do you like Arabs
-    A. yes 
-    B. no (you racist) 
-    C. I don't mind them 
-    D. I like their food
-    
 
-    
-
-  </p>
 
 </div>
-<div class="btn-group">
 
-<button onclick="hello('A'); this.disabled=true;" class="button">A</button>
-<button onclick="hello('B'); this.disabled=true;" class="button">B</button>
-<button onclick="hello('C'); this.disabled=true;" class="button">C</button>
-<button onclick="hello('D'); this.disabled=true;" class="button">D</button>
-</div>
-</div>
+
+
+
 
 </body>
 </html>

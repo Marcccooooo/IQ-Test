@@ -1,3 +1,8 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 .btn-group .button {
   background-color: #555555; 
   border: 1px solid black;
@@ -24,6 +29,39 @@
 
 .btn-group button:disabled {
   background-color: #e7e7e7; color: black;}
+
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+
+p {
+  background-color: white;
+}
+.center {
+  text-align: center;
+  list-style-position: inside;
+}
+div {
+  padding: 25px;
+}
+
+.hey {
+ padding: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#counter{
+  font-size: 100px;
+  padding: 10px;
+  
+}
 
 
 
